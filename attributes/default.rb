@@ -15,6 +15,7 @@ default['mumble']['textmessagelength']          = 0
 default['mumble']['imagemessagelength']         = 0
 default['mumble']['allowhtml']                  = 'true'
 default['mumble']['logdays']                    = 31
+default['mumble']['register_name']              = 'Mumble Server'
 default['mumble']['uname']                      = 'mumble-server'
 default['mumble']['certrequired']               = 'False'
 set_unless['mumble']['superuser']['passwd'] = SecureRandom.base64(16).gsub(/\W/, "")
