@@ -142,7 +142,7 @@ registerName=<%= node['mumble']['register_name'] %>
 
 # If you have a proper SSL certificate, you can provide the filenames here.
 # Otherwise, Murmur will create it's own certificate automatically.
-<% unless node['mumble']['sslCert'] and node['mumble']['sslKey'] -%>
+<% if node['mumble']['sslCert'] and node['mumble']['sslKey'] -%>
 sslCert=<%= node['mumble']['sslCert'] %>
 sslKey=<%= node['mumble']['sslKey'] %>
 <% else -%>
