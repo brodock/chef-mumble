@@ -17,8 +17,11 @@
 # limitations under the License.
 #
 
-package "mumble-server" do
+package "libicu-dev" do
   action :install
+end
+package "mumble-server" do
+   action :install 
 end
 
 template "/etc/mumble-server.ini" do
