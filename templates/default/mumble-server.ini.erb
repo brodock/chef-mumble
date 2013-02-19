@@ -87,7 +87,7 @@ port=<%= node['mumble']['port'] %>
 
 # Specific IP or hostname to bind to.
 # If this is left blank (default), murmur will bind to all available addresses.
-<% unless node['mumble']['host'] -%>
+<% if node['mumble']['host'] -%>
 host=<%= node['mumble']['host'] %>
 <% else -%>
 host=
@@ -105,7 +105,7 @@ users=<%= node['mumble']['users'] %>
 
 # Regular expression used to validate channel names
 # (note that you have to escape backslashes with \ )
-<% unless node['mumble']['channelname'] -%>
+<% if node['mumble']['channelname'] -%>
 channelname=<%= node['mumble']['channelname'] %>
 <% else -%>
 #channelname=[ \\-=\\w\\#\\[\\]\\{\\}\\(\\)\\@\\|]+
@@ -113,7 +113,7 @@ channelname=<%= node['mumble']['channelname'] %>
 
 # Regular expression used to validate user names
 # (note that you have to escape backslashes with \ )
-<% unless node['mumble']['username'] -%>
+<% if node['mumble']['username'] -%>
 username=<%= node['mumble']['username'] %>
 <% else -%>
 #username=[-=\\w\\[\\]\\{\\}\\(\\)\\@\\|\\.]+
