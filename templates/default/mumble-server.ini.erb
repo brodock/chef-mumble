@@ -2,6 +2,8 @@
 # murmur.sqlite in default locations or create it if not found.
 <% unless node['mumble']['mysql'] %>
 database=/var/lib/mumble-server/mumble-server.sqlite
+<% else %>
+#database=/var/lib/mumble-server/mumble-server.sqlite
 <% end %>
 
 # If you wish to use something other than SQLite, you'll need to set the name
