@@ -17,8 +17,8 @@ default['mumble']['bandwidth']                  = 72000
 default['mumble']['users']                      = 100
 default['mumble']['textmessagelength']          = 0
 default['mumble']['imagemessagelength']         = 0
-default['mumble']['channelname']                = '[ \\-=\\w\\#\\[\\]\\{\\}\\(\\)\\@\\|]+'
-default['mumble']['username']                   = '[-=\\w\\[\\]\\{\\}\\(\\)\\@\\|\\.]+'
+default['mumble']['channelname']                = "[ \\-=\\w\\#\\[\\]\\{\\}\\(\\)\\@\\|]+"
+default['mumble']['username']                   = "[-=\\w\\[\\]\\{\\}\\(\\)\\@\\|\\.]+"
 default['mumble']['allowhtml']                  = 'true'
 default['mumble']['logdays']                    = 31
 
