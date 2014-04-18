@@ -17,9 +17,20 @@
 # limitations under the License.
 #
 
+apt_repository "mumble" do
+  uri "http://ppa.launchpad.net/mumble/release/ubuntu"
+  distribution node['lsb']['codename']
+  components ['main']
+  keyserver 'keyserver.ubuntu.com'
+  key '7F05CF9E'
+  action :add
+  notifies :run, "execute[apt-get update]", :immediately
+end
+
 package "libicu-dev" do
   action :install
 end
+
 package "mumble-server" do
    action :install 
 end

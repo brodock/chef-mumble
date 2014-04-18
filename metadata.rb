@@ -1,6 +1,7 @@
-maintainer       "AJ Christensen"
-maintainer_email "aj@junglist.gen.nz"
+maintainer       "Gabriel Mazetto"
+maintainer_email "brodock@gmail.com"
 license          "Apache 2.0"
 description      "Installs/Configures mumble"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.1.2"
+version          "0.2.0"
+name             "mumble"
